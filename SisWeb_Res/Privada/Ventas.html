@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Formularios</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<!--inicio de validacion-->
+	<script type="text/javascript" src="js/expresiones_regulares.js"></script>
+	<script type="text/javascript" src="js/validacion6.js"></script>
+	<!--fin de validacion-->
+</head>
+<body>
+	<br><br>
+	<header>
+		<h2>Tienda Reposterera</h2>
+	</header>
+	<nav id="principal">Menu principal
+		<div id="menu">
+			<ul>
+				<li class="nivel1">
+					<a href="Tienda_Repostera.html" class="nivel1">Tienda Repostera</a>
+				</li>
+				<li class="nivel1">
+					<a href="Propietarios.html" class="nivel1">Propietarios</a>	
+				</li>
+				<li class="nivel1">
+					<a href="Proveedores.html" class="nivel1">Proveedores</a>
+				</li>
+				<li class="nivel1">
+					<a href="Clientes.html" class="nivel1">Clientes</a>
+				</li>
+				<li class="nivel1">
+					<a href="Ventas.html" class="nivel1">Ventas</a>
+				</li>
+				<li class="nivel1">
+					<a href="Productos.html" class="nivel1">Productos</a>
+				</li>
+				<li class="nivel1">
+					<a href="Productos_Precios.html" class="nivel1">Productos Precios</a>
+				</li>
+				<li class="nivel1">
+					<a href="Detalles_Ventas.html" class="nivel1">Detalles Ventas</a>
+				</li>
+				<li class="nivel1">
+					<a href="Compras.html" class="nivel1">Compras</a>
+				</li>
+				<li class="nivel1">
+					<a href="Detalles_Compras.html" class="nivel1">Detalles Compras</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<br><br>
+
+<section id="columna">
+	<header id="subtitulo2">Formulario</header>
+		<form action="#" name="formu" method="post">
+			<fieldset>
+			  <legend aling="center">Ventas</legend>
+				<p>
+					Codigo:<br><input type="text" size="20" name="codigo" maxlength="4" placeholder="ingrese un codigo">
+				</p>
+				<p>
+					Monto de Venta:<br><input type="text" size="5" name="ventas" value="">
+				</p>
+				<p>
+					Fecha de Venta:<br><input type="text" size="15" name="fecha_venta">
+				</p>
+				<p>
+					Codigo Producto:<br><input type="text" size="15" name="codigo_producto" maxlength="4">
+				</p>
+			</fieldset>
+			<br>
+			<div class="ubi_boton">
+				<input type="submit" value="GUARDAR" class="boton" onclick="validar()">
+				<input type="reset" value="BORRAR" class="boton">
+			</div>
+		</form>
+</section>
+</body>
+</html>
